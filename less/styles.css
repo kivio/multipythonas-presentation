@@ -1,0 +1,20 @@
+.border-debug {
+  border: 1px solid #f00;
+}
+#title div #title-text1 {
+  color: #3a3a3a;
+  letter-spacing: 8px;
+}
+#title div #title-text2 {
+  font-size: 160px;
+  color: #a8a8a8;
+  letter-spacing: 3px;
+}
+#title div #title-text3 {
+  margin-top: 7px;
+  color: #ffe569;
+  letter-spacing: -5px;
+}
+#title div #title-text3 span {
+  color: #3974a5;
+}
