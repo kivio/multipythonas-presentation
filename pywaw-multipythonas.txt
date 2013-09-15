@@ -1,0 +1,89 @@
+Cześć nazywam się Marcin Karkocha.
+To nie jest moje pierwsze wystąpienie na pyWawie jak może niektórzy pamiętają miałem okazje poopowiadać wam o Stevie Jobsie w Warszawie podczas prezentacji ToastMasters.
+Tym razem bardziej dobrowolnie chciałbym podzielić się z wami pewnym tematem.
+
+Chodzi mianowicie o odmiany węży występujących w przyrodzie. Zastanawiacie się pewnie co kryje się pod tym przewrotnym tematem który widzicie za moimi plecami?
+
+W takim razie przejdźmy do krótkiego objaśnienia czego dowiecie się z tej prezentacji:
+
+1. Gatunki węży - czyli o tym, że python nie jest jeden, a tak na prawdę to ilu ich jest? Zagadka którą dziś rozwiążemy
+2. Kto? Czego? Kiedy? - brzmi jak definicja nowego przypadku w języku polskim ale to raczej zestaw pytań niezbędny przy doborze pythona do projektu
+3. To nie mój problem! - czyli o tym kiedy wielowersyjność pythona przysparza nas o ból głowy
+4. Co robią inni? - a więc krótko o tym jak wsparcie dla wielu wersji pythona może skomplikować nam życie
+5. Paranoja - śmiać się czy płakać? - Case study ku przestrodze
+6. Postulaty - coby świat był idealny
+7. Podsumowanie - krótko co z tego wynika
+8* Kontakt - gdyby ktoś chciał pogadać
+9. Q&A - no i wasze pytania
+
+A więc zacznijmy, od tego jakie wersje pythona mamy na podorędziu.
+2.7.x - wciąż najpopularniejszy, częściowo kompatybilny z pythonami z serii 3.x
+2.6 - korporation style and other oldies projects
+2.5 - bankowość na wyciągnięcie ręki
+
+a żeby tego było mało:
+
+pypy (2)
+1.7
+1.8
+1.9 - nie kompatybilny z tymi wymienionymi u góry w 100%
+2.0
+2.1
+
+No i oczywiście python 3000 - a dokładnie to kilku pythonów 3000
+
+3.3 - stable and fun
+3.4 - future concepts (omg ...)
+
+i do tego:
+
+pypy3 (2 wersje)
+
+A to wszystko jest powiem szczerze tak sobie ze sobą kompatybilne :(
+Np. kod napisany w pythonie 2.6 w starym stylu (for k,v in my_dict) nie!! jest kompatybilny z pythonem 2.7 wtf!!
+
+Kto? Czego? Kiedy?
+No to teraz zróbmy sobie szybko małą statystykę, kto używa pythona 2.7?
+3.3 lub 3.4?
+Pypy 2?
+
+Okay jednak moje pytanie nie ma za zadanie podzielić programistów na różne wersje pythona a problemy. Ponieważ te 3 fundamentalne pytania w 
+zasadzie może zadać sobie każdy w sytuacji kiedy będzie zmuszony zacząć nowy projekt lub przejąć już istniejący? Co wtedy?
+
+Kto? to pierwsze z pytań które trzeba sobie zadać, kto ma kożystać z danego projektu, kto czyli jaką posiada do tego infrastrukture?
+
+Czy zaczynając nowy projekt na pewno mogę skorzystać z python 3.4 skoro jest taki nowoczesny?
+No właśnie nie, bo np. potrzebuje bilioteki do obsługi FTSa w Django która jest ledwie kompatybilna z pythonem 2.7 a wymaganiem klienta było
+użycie właśnie tej technologi.
+A może pypy? No niestety bo sterownik do CouchDB na którym mamy część starego systemu z którym musimy współpracować wciąż tam nie jest obsługiwany.
+
+Takich drobnych sytuacyjnych przykładów mógłbym tu mnożyć co nie miara i końca by nie było. Powiecie pewnie, że są to jakieś jednostkowe przypadki.
+Podpowiadam będzie takich sporo i najgorsza sytuacja jaka może was spotkać to problem typu napisać forka dużej biblioteki do pythona 3.x czy portować
+się do pythona 2.7 ponieważ tam istnieje potrzebna nam biblioteka.
+
+A więc już na etapie myślenia nad projektem warto się odpowiedzieć sobie na pytanie "czego?", czego będzie nasz projekt wymagał i czy jest to skomplikowane, niszowe,
+jeśli tak to czy mamy do tego gotowe narzędzia czy będziemy musieli się z tym rozprawić sami? Czy warto?
+
+Kiedy, czyli w jakich sytuacjach musimy dbać o kompatybilność a w jakich nie?
+
+To nie mój problem!
+
+Powiesz ponieważ robisz duży projekt na kilka lat którego właściciele powiedzieli python 2.7 i nic innego. 
+Twój błąd. Jeśli już mamy istniejące i działające nowsze wersje oprogramowania to istnieje prawdopodobieństwo, że nasz klient sobie kiedyś zażyczy 
+aby uruchomić naszą aplikacje na pythonie 3.x, i co wtedy?
+Jeśli odpuścisz sobie teraz możesz nie być na to gotowy, a więc jeśli jesteś w pythonie 2.7 to patrz na to co z 3.x zostało już zapożyczone i używaj.
+Patrz na to co jest w module __future__ i używaj, tam leżą elementy pythona 3.x, jeśli na pepie opisane jest fajne rozwiązanie które np. jest w wersji unstable
+pythona 3.4 to o ile jest to proste napisz sobie takie coś w obecnej wersji pythona i używaj, potem przeportowanie będzie często oznaczało wyrzucenie naszej biblioteczki
+i zrobienie jednego importu a tobie może to ułatwić życie. Używaj wszystkiego co możesz co przybliża Cię do nowszej wersji pythona. Później portowanie może
+okazać się zwyczajnie mniej inwazyjne i za dwa lata nie okaże się, że cały projekt trzeba przepisać od nowa.
+
+Co robią inni - czyli przykłady z życia codziennego
+
+Flask - równoległe repo kompatybilne z pythonem 3.x
+Pillow - try na try'u stoi
+Django - six - biblioteka ułatwiająca portowanie
+
+Paranoja: Case Study firmy logistycznej
+
+
+

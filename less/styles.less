@@ -12,32 +12,108 @@
   border: 1px solid #f00;
 }
 
-#title {width: 1240px; height: 600px; text-align: left; }
-#title-text1 { font-size: 102px; }
-#title-text2 { font-size: 153px; }
-#title-text3 { font-size: 141px; }
-
 #title {
+  width: 1000px;
+  height: 600px;
+  text-align: left;
 
   div {
 
     #title-text1 {
+      font-size: 102px;
       color: @dark-gray;
       letter-spacing: 8px;
     }
     #title-text2 {
-      font-size: 160px;
+      font-size: 133px;
       color: @light-gray;
       letter-spacing: 3px;
     }
     #title-text3 {
+      font-size: 131px;
       margin-top: 7px;
       color: @python-yellow;
-      letter-spacing: -5px;
+      letter-spacing: -15px;
 
       span {
         color: @python-blue;
       }
     }
   }
+}
+
+#agenda {
+
+  text-align: left;
+
+  h2 {
+    margin: 10px;
+    padding: 0;
+  }
+
+  .option-list {
+
+    line-height: 45px;
+    font-family: "Open Sans";
+
+    li {
+      display: none;
+    }
+  }
+}
+
+#statistics, .stat {
+  text-align: left;
+}
+
+.summary{
+
+  span {
+    display: block;
+    width: 1000px;
+  }
+  
+  hr {
+    border: 5px solid @intensive-red;
+  }
+}
+
+#incop-ex, #parody-ex {
+  text-align: left;
+  background: @dark-gray;
+  color: @light-gray;
+
+  span {
+    &.marg {
+      margin-left: 50px;
+    }
+
+    &.py_code {
+       color: @python-yellow;
+    }
+
+    &.py_print {
+       color: @live-green;
+        margin-left: 50px;
+    }
+  }
+}
+
+span {
+  &.yellow {
+    color: @spocko-green;
+  }
+
+  &.live {
+    color: @live-red;
+  }
+
+  &.blue {
+    color: @python-blue;
+  }
+}
+
+#nem-problema, #paranoja{
+  text-align: left;
+  line-height: 50px;
 }

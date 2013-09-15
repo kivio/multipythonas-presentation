@@ -2,33 +2,84 @@
   border: 1px solid #f00;
 }
 #title {
-  width: 1240px;
+  width: 1000px;
   height: 600px;
   text-align: left;
 }
-#title-text1 {
-  font-size: 102px;
-}
-#title-text2 {
-  font-size: 153px;
-}
-#title-text3 {
-  font-size: 141px;
-}
 #title div #title-text1 {
+  font-size: 102px;
   color: #3a3a3a;
   letter-spacing: 8px;
 }
 #title div #title-text2 {
-  font-size: 160px;
+  font-size: 133px;
   color: #a8a8a8;
   letter-spacing: 3px;
 }
 #title div #title-text3 {
+  font-size: 131px;
   margin-top: 7px;
   color: #ffe569;
-  letter-spacing: -5px;
+  letter-spacing: -15px;
 }
 #title div #title-text3 span {
   color: #3974a5;
+}
+#agenda {
+  text-align: left;
+}
+#agenda h2 {
+  margin: 10px;
+  padding: 0;
+}
+#agenda .option-list {
+  line-height: 45px;
+  font-family: "Open Sans";
+}
+#agenda .option-list li {
+  display: none;
+}
+#statistics,
+.stat {
+  text-align: left;
+}
+.summary span {
+  display: block;
+  width: 1000px;
+}
+.summary hr {
+  border: 5px solid #d71a21;
+}
+#incop-ex,
+#parody-ex {
+  text-align: left;
+  background: #3a3a3a;
+  color: #a8a8a8;
+}
+#incop-ex span.marg,
+#parody-ex span.marg {
+  margin-left: 50px;
+}
+#incop-ex span.py_code,
+#parody-ex span.py_code {
+  color: #ffe569;
+}
+#incop-ex span.py_print,
+#parody-ex span.py_print {
+  color: #24a83b;
+  margin-left: 50px;
+}
+span.yellow {
+  color: #98bb55;
+}
+span.live {
+  color: #ff3010;
+}
+span.blue {
+  color: #3974a5;
+}
+#nem-problema,
+#paranoja {
+  text-align: left;
+  line-height: 50px;
 }
