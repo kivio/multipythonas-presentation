@@ -35,6 +35,7 @@
 #agenda .option-list {
   line-height: 45px;
   font-family: "Open Sans";
+  margin-left: 50px;
 }
 #agenda .option-list li {
   display: none;
@@ -53,8 +54,6 @@
 #incop-ex,
 #parody-ex {
   text-align: left;
-  background: #3a3a3a;
-  color: #a8a8a8;
 }
 #incop-ex span.marg,
 #parody-ex span.marg {
@@ -82,4 +81,58 @@ span.blue {
 #paranoja {
   text-align: left;
   line-height: 50px;
+}
+#paranoja ul li {
+  color: #3a3a3a;
+  display: none;
+}
+#paranoja ul li span {
+  color: #d71a21;
+}
+.syntax {
+  font-size: 37px;
+  line-height: 42px;
+  text-align: left;
+  background: none;
+}
+#six {
+  text-align: left;
+  line-height: 35px;
+  font-size: 30px;
+}
+#six img {
+  vertical-align: middle;
+}
+#six .django {
+  color: #092e20;
+  font-weight: bold;
+}
+#postulaty h2 {
+  color: #3974a5;
+}
+#postulaty p {
+  margin-top: -30px;
+  font-size: 24px;
+  color: #ffe569;
+  text-shadow: 1px 1px #C2B057;
+}
+#postulaty ul {
+  margin-left: 240px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: normal;
+}
+#qa {
+  font-size: 200px;
+  font-weight: bold;
+  color: #3974a5;
+}
+#qa span {
+  color: #ffe569;
+}
+#qa span.and {
+  color: #98bb55;
+}
+#about p img {
+  max-height: 100px;
 }

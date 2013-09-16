@@ -6,6 +6,7 @@
 @live-green: #24A83B;
 @python-blue: #3974A5;
 @python-yellow: #FFE569;
+@django: #092E20;
 
 
 .border-debug {
@@ -55,6 +56,7 @@
 
     line-height: 45px;
     font-family: "Open Sans";
+    margin-left: 50px;
 
     li {
       display: none;
@@ -80,8 +82,8 @@
 
 #incop-ex, #parody-ex {
   text-align: left;
-  background: @dark-gray;
-  color: @light-gray;
+//  background: @dark-gray;
+//  color: @light-gray;
 
   span {
     &.marg {
@@ -116,4 +118,80 @@ span {
 #nem-problema, #paranoja{
   text-align: left;
   line-height: 50px;
+}
+
+#paranoja {
+  ul {
+    li {
+      color: @dark-gray;
+      display: none;
+      span {
+        color: @intensive-red;
+      }
+    }
+  }
+}
+
+.syntax {
+  font-size: 37px;
+  line-height: 42px;
+  text-align: left;
+  background: none;
+}
+
+#six {
+  text-align: left;
+  line-height: 35px;
+  font-size: 30px;
+
+  img {
+    vertical-align: middle;
+  }
+
+  .django {
+    color: @django;
+    font-weight: bold;
+
+  }
+}
+
+#postulaty {
+
+  h2 {
+    color: @python-blue;
+  }
+
+  p {
+    margin-top: -30px;
+    font-size: 24px;
+    color: @python-yellow;
+    text-shadow: 1px 1px #C2B057;
+  }
+
+  ul {
+    margin-left: 240px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: normal;
+  }
+}
+
+#qa {
+  font-size: 200px;
+  font-weight: bold;
+  color: @python-blue;
+
+  span {
+    color: @python-yellow;
+
+    &.and {
+      color: @spocko-green;
+    }
+  }
+}
+
+#about {
+  p img {
+    max-height: 100px;
+  }
 }

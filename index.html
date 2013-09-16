@@ -1,122 +1,177 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Multipythonas</title>
-    
-    <meta name="description" content="Multipythonas">
-    <meta name="author" content="Marcin Karkocha" />
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700italic,300,400,800' rel='stylesheet' type='text/css'>
-    <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="less/styles.css" rel="stylesheet" />
+    <meta name="description" content="Multipythonas">
+    <meta name="author" content="Marcin Karkocha"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700italic,300,400,800'
+          rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/pygments.css" rel="stylesheet"/>
+    <link href="less/styles.css" rel="stylesheet"/>
 </head>
 <body>
 
-	<div class="background"></div>
-	
-	<div id="impress" class="impress-not-supported">
-		
-		<div id="title" class="step" data-x="520" data-y="900" data-scale="2">
-			<div class="big bold">
-				<div id="title-text1">Takich dwóch jak nas trzech</div>
-				<div id="title-text2">to nie ma ani jednego</div>
-				<div id="title-text3"><span>Multi</span>pythonas</div>
-			</div>
-		</div>
-        <div id="agenda" class="step invisible-future" data-x="2000" data-y="900" data-scale="1" data-rotate-y="45">
-            <h2>Agenda</h2>
-            <ol class="option-list">
-                <li>Jakie gatunki pythona znamy?</li>
-                <li>Kto? Czego? Kiedy?</li>
-                <li>To nie mój problem!</li>
-                <li>Paranoja - śmiać się czy płakać?</li>
-                <li>3 projekty na trzy podejścia</li>
-                <li>Try-ing programming</li>
-                <li>Fork like Flask</li>
-                <li>2to3 = six</li>
-                <li>Postulaty</li>
-                <li>Podsumowanie</li>
-                <li>Kontakt i Q&A</li>
-            </ol>
-        </div>
-        <div id="statistics" class="step" data-x="-2000" data-y="900" data-scale="3" data-rotate-y="45">
-            <h2>Wersje pythona:</h2>
-        </div>
-        <div class="step stat" data-x="-2000" data-y="1200" data-scale="3" data-rotate-y="45">
-           2.7
-        </div>
-        <div class="step stat" data-x="-2000" data-y="1070" data-scale="3" data-rotate-y="45">
-            2.6
-        </div>
-        <div class="step stat" data-x="-2000" data-y="950" data-scale="3" data-rotate-y="45">
-            2.5
-        </div>
-        <div class="step stat" data-x="-2000" data-y="1320" data-scale="3" data-rotate-y="45">
-            3.3
-        </div>
-        <div class="step stat" data-x="-2000" data-y="1440" data-scale="3" data-rotate-y="45">
-            3.4
-        </div>
-        <div class="step stat" data-x="-2000" data-y="1570" data-scale="3" data-rotate-y="45">
-            Pypy 1.8 - 2.1
-        </div>
-        <div class="step stat" data-x="-2000" data-y="1700" data-scale="3" data-rotate-y="45">
-            Pypy3
-        </div>
+<div class="background"></div>
 
-        <div class="step stat summary" data-x="-2000" data-y="2000" data-scale="3" data-rotate-y="45">
-            <hr/>
-            <span>A to wszystko jest ze sobą mało kompatybilne</span>
-        </div>
+<div id="impress" class="impress-not-supported">
 
-        <div id="incop-ex" class="step stat" data-x="-2000" data-y="1125" data-scale="1">
-            <span class="py_code">for</span> key, val <span class="py_code">in</span> my_dict:<br/>
-                <span class="py_print">print</span> key, val
-        </div>
+    <div class="step" data-scale="10">
 
-        <div class="step" data-x="520" data-y="-300" data-rotate-y="45">
-            <h1><span class="yellow">Kto?</span><span class="live">Czego?</span><span class="blue">Kiedy?</span></h1>
+    </div>
+    <div id="title" class="step" data-x="520" data-y="900" data-scale="4">
+        <div class="big bold">
+            <div id="title-text1">Takich dwóch jak nas trzech</div>
+            <div id="title-text2">to nie ma ani jednego</div>
+            <div id="title-text3"><span>Multi</span>pythonas</div>
         </div>
+    </div>
+    <div id="agenda" class="step invisible-future" data-x="2100" data-y="900" data-scale="1" data-rotate-y="45">
+        <h2>Agenda</h2>
+        <ol class="option-list">
+            <li>Jakie gatunki pythona znamy?</li>
+            <li>Kto? Czego? Kiedy?</li>
+            <li>To nie mój problem!</li>
+            <li>Paranoja - śmiać się czy płakać?</li>
+            <li>3 projekty na trzy podejścia</li>
+            <li>Try-ing programming</li>
+            <li>Fork like Werkzeug</li>
+            <li>2to3 = six</li>
+            <li>Postulaty</li>
+            <li>Podsumowanie</li>
+            <li>Kontakt i Q&A</li>
+        </ol>
+    </div>
+    <div id="statistics" class="step" data-x="-2000" data-y="900" data-scale="3" data-rotate-y="45">
+        <h2>Wersje pythona:</h2>
+    </div>
+    <div class="step stat" data-x="-2000" data-y="1200" data-scale="3" data-rotate-y="45">
+        2.7
+    </div>
+    <div class="step stat" data-x="-2000" data-y="1070" data-scale="3" data-rotate-y="45">
+        2.6
+    </div>
+    <div class="step stat" data-x="-2000" data-y="950" data-scale="3" data-rotate-y="45">
+        2.5
+    </div>
+    <div class="step stat" data-x="-2000" data-y="1320" data-scale="3" data-rotate-y="45">
+        3.3
+    </div>
+    <div class="step stat" data-x="-2000" data-y="1440" data-scale="3" data-rotate-y="45">
+        3.4
+    </div>
+    <div class="step stat" data-x="-2000" data-y="1570" data-scale="3" data-rotate-y="45">
+        Pypy 1.8 - 2.1
+    </div>
+    <div class="step stat" data-x="-2000" data-y="1700" data-scale="3" data-rotate-y="45">
+        Pypy3
+    </div>
 
-        <div id="nem-problema" class="step">
-            <h2>To nie mój problem!</h2>
-            <ul>
-                <li>__future__</li>
-                <li>Python 2.7</li>
-                <li>Six</li>
-                <li>2to3</li>
-            </ul>
+    <div class="step stat summary" data-x="-2000" data-y="2000" data-scale="3" data-rotate-y="45">
+        <hr/>
+        <span>A to wszystko jest ze sobą mało kompatybilne</span>
+    </div>
+
+    <div id="incop-ex" class="step stat" data-x="-2000" data-y="1125" data-scale="1">
+        <span class="py_code">for</span> key, val <span class="py_code">in</span> my_dict:<br/>
+        <span class="py_print">print</span> key, val
+    </div>
+
+    <div class="step" data-x="520" data-y="-300" data-rotate-y="45">
+        <h1><span class="yellow">Kto?</span><span class="live">Czego?</span><span class="blue">Kiedy?</span></h1>
+    </div>
+
+    <div id="nem-problema" class="step">
+        <h2>To nie mój problem!</h2>
+        <ul>
+            <li>__future__</li>
+            <li>Python 2.7</li>
+            <li>Six</li>
+            <li>2to3</li>
+        </ul>
+    </div>
+
+    <div id="paranoja" class="step" data-x="1200" data-y="-400" data-rotate="90">
+        <h2>Paranoja - śmiać się czy płakać?</h2>
+        <ul>
+            <li><span>Klient:</span> Firma doradztwa rolniczego</li>
+            <li><span>Zadanie:</span> Moduł do balonów meteorologicznych</li>
+            <li><span>Wymagania:</span> Python 2.4 - 3.4</li>
+            <li><span>Ograniczenia:</span> Output -> stdout</li>
+            <li><span>Problem:</span> Print parody!</li>
+        </ul>
+    </div>
+    <div id="parody-ex" class="step" data-x="1700" data-y="-400" data-rotate="90">
+        <div class="syntax"><pre><span class="k">def</span> <span class="nf">m_print</span><span class="p">(</span><span class="n">format</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+                <span class="k">print</span> <span class="n">format</span> <span class="o">%</span> <span class="n">args</span>
+        <span class="k">except</span> <span class="ne">SyntaxError</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="n">format</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>
+</pre></div>
+    </div>
+    <div id="trying" class="step" data-x="700" data-y="2300" data-scale="3" data-rotate-y="70">
+        <h2>Try-ing Programming</h2>
+
+        <div class="syntax"><pre><span class="k">try</span><span class="p">:</span>
+            <span class="kn" style="margin-left: -220px;">import</span> <span class="nn">json</span>
+            <span class="k" style="margin-left: -220px;">try</span><span class="p">:</span>
+            <span class="kn" style="margin-left: -170px;">from</span> <span class="nn">StringIO</span> <span class="kn">import</span> <span
+                        class="n">StringIO</span>
+            <span class="k" style="margin-left: -220px;">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+            <span class="kn" style="margin-left: -170px;">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+            <span class="k" style="margin-left: -260px;">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+            <span class="kn" style="margin-left: -220px">import</span> <span class="nn">simplejson</span> <span class="kn">as</span> <span class="nn">json</span>
+            <span class="kn" style="margin-left: -220px">from</span> <span class="nn">simplejson.compat</span> <span class="kn">import</span> <span
+                        class="n">StringIO</span>
+            </pre>
         </div>
+    </div>
+    <div class="step" data-x="-2000" data-y="0">
+        <h2>Fork like Werkzeug</h2>
+        <img src="img/werkzeug_2to3.png" width="800"/>
+    </div>
+    <div id="six" class="step" data-x="-1100">
+        <p>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.
 
-        <div id="paranoja" class="step" data-x="3000" data-y="-1000" data-rotate="90">
-            <h2>Paranoja - śmiać się czy płakać?</h2>
-            <ul>
-                <li>Firma doradztwa rolniczego</li>
-                <li>Moduł do balonów meteorologicznych</li>
-                <li>Python 2.4 - 3.4</li>
-                <li>Output -> stdout</li>
-                <li>Print parody!</li>
-            </ul>
-        </div>
-        <div id="parody-ex" class="step" data-x="3000" data-y="-2000" data-rotate="90">
-            <span class="py_code">def</span> m_print(format, *args):<br/>
-                <span class="py_code marg">try</span>:<br/>
-                <span class="marg"></span><span class="py_print marg">print</span> format % args<br/>
-                <span class="py_code marg">except</span> SyntaxError:<br/>
-                <span class="marg"></span><span class="marg">print(format.format(*args))</span><br/>
-        </div>
-	
+        Six supports every Python version since 2.4. It is contained in only one Python file, so it can be easily copied into your project. (The copyright and license notice must be retained.)
+        </p>
+        <img src="img/django_six.png" />
+        <span class="django">Django 1.5</span>
+    </div>
+    <div id="postulaty" class="step" data-x="3000" data-y="700" data-rotate-y="90" data-rotate="90">
+        <h2>Postulaty</h2>
+        <p>aby developerom pythona żyło się lepiej</p>
+        <ul>
+            <li>Przenosiny do Pythona 3.3</li>
+            <li>Wycofanie wsparcia dla Pythona 2.x</li>
+            <li>lub ... wprowadzanie nowości z 3.x do 2.7</li>
+            <li>Six for the WIN!</li>
+            <li>Pypy bardziej kompatybilny z Pythonem</li>
+        </ul>
+    </div>
+    <div id="qa" class="step" data-x="510" data-y="1000">
+        Q<span class="and">&</span><span>A</span>
+    </div>
+    <div id="about" class="step" data-x="10000" data-y="10000" data-rotate="180" data-rotate-y="180">
+        <h2>kivio@kivio.pl</h2>
+        <img src="img/kivio.jpeg"/>
+        <p>
+            <img src="img/kivio-logo.png" />
+            <img src="img/polidea-logo.svg" />
+        </p>
+    </div>
 
-		
-	</div>
+</div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/impress.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/mousetrap.min.js"></script>
-	<script src="js/script.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/impress.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/mousetrap.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
